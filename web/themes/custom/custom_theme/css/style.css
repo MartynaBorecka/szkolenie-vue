@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Default Flowbite blue. */
+    --color-primary-50: #eff6ff;
+    --color-primary-100: #dbeafe;
+    --color-primary-200: #bfdbfe;
+    --color-primary-300: #93c5fd;
+    --color-primary-400: #60a5fa;
+    --color-primary-500: #3b82f6;
+    --color-primary-600: #2563eb;
+    --color-primary-700: #1d4ed8;
+    --color-primary-800: #1e40af;
+    --color-primary-900: #1e3a8a;
+    --color-primary-950: #172554;
+    /* Accessibility sizes. */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.75rem;
+    --font-size-7xl: 4.5rem;
+    --font-size-8xl: 6rem;
+    --font-size-9xl: 8rem;
+    --line-height-xs: 1rem;
+    --line-height-sm: 1.25rem;
+    --line-height-base: 1.5rem;
+    --line-height-lg: 1.75rem;
+    --line-height-xl: 1.75rem;
+    --line-height-2xl: 2rem;
+    --line-height-3xl: 2.25rem;
+    --line-height-4xl: 2.5rem;
+    --line-height-5xl: 1;
+    --line-height-6xl: 1;
+    --line-height-7xl: 1;
+    --line-height-8xl: 1;
+    --line-height-9xl: 1;
+    /* Accessibility contrast. */
+    --color-contrast-background: #000000;
+    --color-contrast-primary: #ffff00;
+
+    --color-featured-background: #f7fafc;
+  }
+  .dark {
+  --color-featured-background: #1f2937;
+  }
+}
+
+@layer components {
+  .format-primary {
+    --tw-format-links: var(--color-primary-600)
+  }
+
+  .dark .dark\:format-invert {
+    --tw-format-invert-links: var(--color-primary-500);
+    --tw-format-links: var(--tw-format-invert-links);
+  }
+
+  .filter-gray-900 {
+    filter: brightness(0) saturate(100%) invert(6%) sepia(29%) saturate(1491%) hue-rotate(185deg) brightness(93%) contrast(93%);
+  }
+
+  .filter-gray-500 {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(11%) saturate(499%) hue-rotate(182deg) brightness(101%) contrast(88%);
+  }
+
+  .filter-gray-400 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(6%) saturate(569%) hue-rotate(179deg) brightness(87%) contrast(88%);
+  }
+
+  .filter-white {
+    filter: brightness(0) invert();
+  }
+
+  .filter-black {
+    filter: brightness(0) saturate(100%)
+  }
+
+  /* Accessibility contrast format */
+  .contrast .contrast\:format-contrast {
+    --tw-format-body: var(--color-contrast-background);
+    --tw-format-hr: var(--color-contrast-primary);
+    --tw-format-quotes: var(--color-contrast-primary);
+    --tw-format-quote-borders: var(--color-contrast-primary);
+    --tw-format-captions: var(--color-contrast-primary);
+    --tw-format-code: var(--color-contrast-primary);
+    --tw-format-code-bg: var(--color-contrast-background);
+    --tw-format-pre-code: var(--color-contrast-primary);
+    --tw-format-pre-bg: var(--color-contrast-background);
+    --tw-format-th-borders: var(--color-contrast-primary);
+    --tw-format-invert-body: var(--color-contrast-primary);
+    --tw-format-invert-headings: var(--color-contrast-primary);
+    --tw-format-invert-lead: var(--color-contrast-primary);
+    --tw-format-invert-bold: var(--color-contrast-primary);
+    --tw-format-invert-counters: var(--color-contrast-primary);
+    --tw-format-invert-bullets: var(--color-contrast-primary);
+    --tw-format-invert-hr: var(--color-contrast-primary);
+    --tw-format-invert-quotes: var(--color-contrast-primary);
+    --tw-format-invert-quote-borders: var(--color-contrast-primary);
+    --tw-format-invert-captions: var(--color-contrast-primary);
+    --tw-format-invert-code: var(--color-contrast-primary);
+    --tw-format-invert-pre-code: var(--color-contrast-primary);
+    --tw-format-invert-pre-bg: var(--color-contrast-background);
+    --tw-format-invert-th-borders: var(--color-contrast-primary);
+    --tw-format-invert-td-borders: var(--color-contrast-primary);
+    --tw-format-invert-th-bg: var(--color-contrast-background);
+    --tw-format-invert-links: var(--color-contrast-primary);
+    --tw-format-links: var(--tw-format-invert-links);
+    --tw-format-headings: var(--color-contrast-primary);
+    --tw-format-lead: var(--color-contrast-primary);
+    --tw-format-bold: var(--color-contrast-primary);
+    --tw-format-counters: var(--color-contrast-primary);
+    --tw-format-bullets: var(--color-contrast-primary);
+    --tw-format-th-bg: var(--color-contrast-background);
+    --tw-format-td-borders: var(--color-contrast-primary);
+    color: var(--color-contrast-primary);
+  }
+
+  /* Accessibility contrast filter. */
+  .filter-contrast-primary {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(77%) saturate(2767%) hue-rotate(5deg) brightness(107%) contrast(108%);
+  }
+}

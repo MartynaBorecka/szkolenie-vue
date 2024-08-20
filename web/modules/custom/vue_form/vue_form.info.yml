@@ -1,0 +1,5 @@
+name: 'Vue Form'
+type: module
+description: 'Form create in vue3'
+package: Custom
+core_version_requirement: ^10 || ^11

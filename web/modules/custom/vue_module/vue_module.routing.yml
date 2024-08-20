@@ -1,0 +1,7 @@
+vue_module:
+  path: '/vue-app'
+  defaults:
+    _title: 'Vue app'
+    _controller: '\Drupal\vue_module\Controller\VueModuleController::index'
+  requirements:
+    _permission: 'access content'

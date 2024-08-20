@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for typescript course module.
+ */
+
+/**
+ * Implements hook_preprocess().
+ */
+function typescript_course_preprocess(&$variables, $hook) {
+  $variables['#attached']['library'][] = 'typescript_course/typescript_course';
+
+}

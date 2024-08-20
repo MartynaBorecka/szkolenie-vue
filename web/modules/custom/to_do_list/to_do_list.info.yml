@@ -1,0 +1,5 @@
+name: 'To do list'
+type: module
+description: 'To do list in vue app'
+package: Custom
+core_version_requirement: ^10 || ^11

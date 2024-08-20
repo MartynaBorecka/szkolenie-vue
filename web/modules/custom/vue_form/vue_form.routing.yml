@@ -1,0 +1,7 @@
+vue_form.form:
+  path: '/vue-form'
+  defaults:
+    _title: 'Form'
+    _controller: '\Drupal\vue_form\Controller\VueFormController::index'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+products.vue_app:
+  path: '/products-app'
+  defaults:
+    _title: 'Products app'
+    _controller: '\Drupal\products\Controller\ProductsController::index'
+  requirements:
+    _permission: 'access content'

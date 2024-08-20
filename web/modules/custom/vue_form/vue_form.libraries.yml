@@ -1,0 +1,12 @@
+form:
+  js:
+    vue_app/dist/chunk-vendors.js: {preprocess: false}
+    vue_app/dist/chunk-vendors.js.map: {preprocess: false}
+    vue_app/dist/app.js: {preprocess: false}
+    vue_app/dist/app.js.map: {preprocess: false}
+  css:
+    theme:
+      vue_app/dist/app.css: {}
+  dependencies:
+    - core/drupalSettings
+    - core/drupal
